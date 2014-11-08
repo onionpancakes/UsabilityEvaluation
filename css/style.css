@@ -11,7 +11,7 @@ a, a:link, a:visited {
 	color: black;
 }
 
-img {
+figure, img {
 	width: 300px;
 	height: auto;
 }
