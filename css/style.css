@@ -1,0 +1,92 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+/* Global styles */
+body {
+	min-width: 48em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a, a:link, a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+img {
+	width: 300px;
+	height: auto;
+}
+
+.float_left {
+	float: left;
+	clear: both;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+article, nav > *, footer {
+	border: 1px dashed black;
+}
+
+/* Navbar */
+.index {
+	display: flex;
+	text-align: center;
+}
+	.index * {
+		flex: 1 1 5em;
+		font-size: 0.85em;
+	}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+	.navigation * {
+		flex: 1 1 10em;
+	}
+	.navigation *:first-child ~ * {
+		/* Sets the next clink to be right justified */
+		text-align: right;
+	}
+
+.active {
+	background-color: gainsboro;
+}
+
+nav a:hover {
+	color: yellow;
+	background-color: black;
+}
+
+/* Article */
+article {
+	overflow: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+	article h1 {
+		text-align: center;
+		font-size: 2em;
+	}
+	article h2 {
+		text-align: center;
+	}
+
+.quote {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+section {
+	clear: both;
+}
+
+figure {
+	margin: 0;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+}
