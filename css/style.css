@@ -33,8 +33,8 @@ article, nav > *, footer {
 	.navigation * {
 		flex: 1 1 10em;
 	}
-	.navigation *:first-child ~ * {
-		/* Sets the next clink to be right justified */
+	.navigation *:nth-child(2) {
+		/* Sets the next link to be right justified */
 		text-align: right;
 	}
 
@@ -74,20 +74,17 @@ section {
 
 /* Figures and images */
 figure {
+	width: 300px;
 	margin: 0;
 }
-
-figure, figure img {
-	width: 300px;
-	height: auto;
-}
-
-img {
-	margin-bottom: 0.5em;
-}
+	figure img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 0.5em;
+	}
 
 figcaption {
-	font-size: 0.7em;
+	font-size: 0.8em;
 }
 
 .float_left {
