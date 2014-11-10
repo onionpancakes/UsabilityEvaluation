@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
-/* Global styles */
+/* Global stuff */
 body {
 	min-width: 48em;
 	font-family: 'Open Sans', sans-serif;
@@ -9,18 +9,6 @@ body {
 a, a:link, a:visited {
 	text-decoration: none;
 	color: black;
-}
-
-figure, img {
-	width: 300px;
-	height: auto;
-}
-
-.float_left {
-	float: left;
-	clear: both;
-	margin-right: 0.5em;
-	margin-bottom: 0.5em;
 }
 
 article, nav > *, footer {
@@ -68,7 +56,7 @@ article {
 		text-align: center;
 		font-size: 2em;
 	}
-	article h2 {
+	article > h2 {
 		text-align: center;
 	}
 
@@ -80,10 +68,26 @@ article {
 
 section {
 	clear: both;
+	overflow: auto;
+	background-color: gainsboro;
+	border-radius: 1em;
 }
 
+/* Figures and images */
 figure {
 	margin: 0;
+}
+
+figure, img {
+	width: 300px;
+	height: auto;
+}
+
+.float_left {
+	float: left;
+	clear: both;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 /* Footer */
