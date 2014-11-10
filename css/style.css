@@ -2,7 +2,7 @@
 
 /* Global stuff */
 body {
-	min-width: 48em;
+	min-width: 52em;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -28,6 +28,7 @@ article, nav > *, footer {
 .navigation {
 	display: flex;
 	justify-content: space-between;
+	font-size: 1.5em;
 }
 	.navigation * {
 		flex: 1 1 10em;
@@ -69,8 +70,6 @@ article {
 section {
 	clear: both;
 	overflow: auto;
-	background-color: gainsboro;
-	border-radius: 1em;
 }
 
 /* Figures and images */
@@ -83,11 +82,34 @@ figure, img {
 	height: auto;
 }
 
+img {
+	margin-bottom: 0.5em;
+}
+
+figcaption {
+	font-size: 0.7em;
+}
+
 .float_left {
 	float: left;
 	clear: both;
 	margin-right: 0.5em;
 	margin-bottom: 0.5em;
+}
+
+.float_right {
+	float: right;
+	clear: both;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image_group {
+	display: flex;
+}
+
+.image_group > * ~ figure {
+	margin-left: 0.5em;
 }
 
 /* Footer */
