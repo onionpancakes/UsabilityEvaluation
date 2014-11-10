@@ -77,7 +77,7 @@ figure {
 	margin: 0;
 }
 
-figure, img {
+figure, figure img {
 	width: 300px;
 	height: auto;
 }
