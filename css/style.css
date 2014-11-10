@@ -11,10 +11,6 @@ a, a:link, a:visited {
 	color: black;
 }
 
-article, nav > *, footer {
-	border: 1px dashed black;
-}
-
 /* Navbar */
 .index {
 	display: flex;
@@ -23,6 +19,18 @@ article, nav > *, footer {
 	.index * {
 		flex: 1 1 5em;
 		font-size: 0.85em;
+		
+		border-width: 1px 1px 1px 0px;
+		border-color: grey;
+		border-style: solid;
+		
+	}
+	.index *:first-child {
+		border-width: 1px 1px 1px 1px;
+	}
+	.index a:hover {
+		color: firebrick;
+		background-color: rgba(200, 0, 0, 0.2);
 	}
 
 .navigation {
@@ -37,14 +45,17 @@ article, nav > *, footer {
 		/* Sets the next link to be right justified */
 		text-align: right;
 	}
+	.navigation a:hover {
+		color: firebrick;
+		background: linear-gradient(to right, rgba(200, 0, 0, 0.2), rgba(200, 0, 0, 0.0));
+	}
+	.navigation a:hover:nth-child(2) {
+		color: firebrick;
+		background: linear-gradient(to left, rgba(200, 0, 0, 0.2), rgba(200, 0, 0, 0.0));
+	}
 
 .active {
 	background-color: gainsboro;
-}
-
-nav a:hover {
-	color: yellow;
-	background-color: black;
 }
 
 /* Article */
