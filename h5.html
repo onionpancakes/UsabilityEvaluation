@@ -33,34 +33,43 @@
 	</header>
 	<main>
 		<article>
-			<h1>User control and freedom</h1>
-			<p class="quote"><em>"Users often choose system functions by mistake and will need a clearly marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue. Support undo and redo."</em></p>
-			<figure class="float_left">
-				<a class="fancybox" href="img/test.png">
-					<img  src="img/test.png" alt=""/>
-				</a>
-				<figcaption>This opens a fancybox image</figcaption>
-			</figure>
-			<p>Lorem ipsum dolor sit amet, vidit voluptaria disputationi te vix, vix quidam impetus id. Per te dissentias comprehensam definitionem. Nec doctus fabulas te, mei ut purto velit argumentum, cu nobis noster inciderint eos. Eu mazim pericula eos. Assentior adversarium cu eum, wisi falli deseruisse sed eu, quo vocibus democritum ut. Etiam affert electram mel te, ei usu wisi platonem necessitatibus, nec at menandri neglegentur. Eum id officiis accusata accusamus. Choro ignota singulis eos et, sale idque corrumpit usu ea. Assentior adversarium cu eum, wisi falli deseruisse sed eu, quo vocibus democritum ut. Etiam affert electram mel te, ei usu wisi platonem necessitatibus, nec at menandri neglegentur. Eum id officiis accusata accusamus. Choro ignota singulis eos et, sale idque corrumpit usu ea.</p>
-			<figure class="float_left">
-				<a class="fancybox_iframe" data-fancybox-type="iframe" href="http://www.le.ac.uk/">
-					<img src="img/test.png" alt=""/>
-				</a>
-				<figcaption>This opens an iframe!</figcaption>
-			</figure>
-			<p>Lorem ipsum dolor sit amet, vidit voluptaria disputationi te vix, vix quidam impetus id. Per te dissentias comprehensam definitionem. Nec doctus fabulas te, mei ut purto velit argumentum, cu nobis noster inciderint eos. Eu mazim pericula eos. Assentior adversarium cu eum, wisi falli deseruisse sed eu, quo vocibus democritum ut. Etiam affert electram mel te, ei usu wisi platonem necessitatibus, nec at menandri neglegentur. Eum id officiis accusata accusamus. Choro ignota singulis eos et, sale idque corrumpit usu ea. Assentior adversarium cu eum, wisi falli deseruisse sed eu, quo vocibus democritum ut. Etiam affert electram mel te, ei usu wisi platonem necessitatibus, nec at menandri neglegentur. Eum id officiis accusata accusamus. Choro ignota singulis eos et, sale idque corrumpit usu ea.</p>
-			<p>Assentior adversarium cu eum, wisi falli deseruisse sed eu, quo vocibus democritum ut. Etiam affert electram mel te, ei usu wisi platonem necessitatibus, nec at menandri neglegentur. Eum id officiis accusata accusamus. Choro ignota singulis eos et, sale idque corrumpit usu ea. Sea id diam scribentur. Nam explicari laboramus abhorreant ex, eum at eius corpora intellegebat, id ius incorrupte philosophia. Ut usu aeque lobortis conceptam, pri cu minim numquam. Ridens commune recusabo his ea, in suavitate voluptatibus has. Mei ex principes intellegam. Mel vivendo suscipit tractatos cu.</p>
+			<h1>Error prevention</h1>
+			<p class="quote"><em>"Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action."</em></p>
+			<p>Users are prone to perform accidental actions which may result in entering a error state. Handling errors is time consuming for users and is a frustrating experience. Whenever possible, it is simply better to not allow users to enter errors in the first place. This can be achieved through robust web design. Examples include form validation, confirmation dialogue, and minimalization of irrelvant options.</p>
 			<section>
-				<h2>Section Title</h2>
+				<h2>Forms Errors</h2>
 				<div class="float_right image_group">
 					<figure>
-						<a class="fancybox" href="img/quicklinks_library.png">
-							<img src="img/quicklinks_library.png" alt=""/>
+						<a class="fancybox" href="img/reset_form.png">
+							<img src="img/reset_form.png" alt=""/>
 						</a>
-						<figcaption>foo</figcaption>
+						<figcaption>Selecting reset on the form option will clear the entire form without warning.</figcaption>
 					</figure>
 				</div>
-				<p>foo</p>
+				<p>Sometimes users select options on forms by mistake. For destructive options such as form clearing, it is a good idea to confirm the user's action. In the prospectus form, there are selectable reset options for filled selectors. When the reset option is selected, all selectors will be cleared without warning. This reset error is easily prevented if the reset option was moved outside of the option selectors. It may also be prevented if a dialogue appeared to confirm the user's action.</p>
+			</section>
+			<section>
+				<h2>Forms Error Prevention</h2>
+				<div class="float_right image_group">
+					<figure class="float_right">
+						<a class="fancybox" href="img/check_form.png">
+							<img src="img/check_form.png" alt=""/>
+						</a>
+						<figcaption>Forms will automatically check for valid email syntax. Invalid emails are highlighted in a red border, even before a user hits submit.</figcaption>
+					</figure>
+					<figure class="float_right">
+						<a class="fancybox" href="img/form_post_option.png">
+							<img src="img/form_post_option.png" alt=""/>
+						</a>
+						<figcaption>This form only reveals inputs for an address when the user selects to receive information through mail.</figcaption>
+					</figure>
+				</div>
+				<p>Form validation may be done premptively and can notify the user of errors before the form is submitted. One example would be the email text field. It will attempt to validate its value, checking whether it contains a valid email syntax. If it find the supplied value is invalid, the field is highlighted in a red border.</p>
+				<p>For forms, certain inputs should only be revealed when relevant. This prevents the users for entering uncessesary information, minimizing the chance of inputing incorrect data. One example of this would be "I would like to receive information by" option on the prospectus form. The form will reveal inputs for a mailing addres only if the user selects the "post" option.</p>
+			</section>
+			<section>
+				<h2>No Dead Links</h2>
+				<p>It is very hard to find a dead link on the site. Their web developers have done a good job keeping the links up to date. We have not found a way to visit the site's 404 page through normal means of navigation.</p>
 			</section>
 		</article>
 	</main>
