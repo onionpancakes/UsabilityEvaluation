@@ -60,9 +60,7 @@ header {
 		color: black;
 	}
 	.index * + * {
-	/*
 		border-left: 1px solid grey;
-		*/
 	}
 	.index .active {
 		color: black;
@@ -101,12 +99,6 @@ section {
 figure {
 	margin: 0;
 	width: 270px;
-	
-	/*
-	background-color: rgba(47,79,79, 0.05);
-	padding: 0.5em;
-	border-radius: 5px;
-	*/
 }
 	figure.small {
 		width: 200px;
@@ -159,8 +151,10 @@ footer {
 	color: dimgray;
 }
 	footer .footer_text {
+		display: -webkit-box;
 		display: flex;
 		justify-content: space-between;
+		-webkit-box-pack: justify;
 	}
 	footer .footer_text .links a {
 		text-decoration: none;
