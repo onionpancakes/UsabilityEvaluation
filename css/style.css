@@ -3,35 +3,56 @@
 
 /* Global stuff */
 body {
+	margin: 0;
 	min-width: 52em;
 	font-family: 'Lato', sans-serif;
 }
 
 a, a:link, a:visited {
 	text-decoration: none;
-	color: black;
 }
 
+header {
+	text-align: center;
+	background-color: rgba(21, 28, 35, .9);
+	color: white;
+}
+
+header h1 {
+	padding: 10px 0;
+	margin: 0;
+	padding-left: 10px;
+}
 /* Navbar */
 .index {
 	display: flex;
 	text-align: center;
+	/*padding-bottom: 10px;*/
 }
 	.index * {
+		padding-bottom: 10px;
+		padding-top: 10px;
 		flex: 1 1 5em;
 		font-size: 0.85em;
+		color: #B2B2B2;
+		-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		transition:.5s;
 		
-		border-width: 1px 1px 1px 0px;
+		/*border-width: 1px 1px 1px 0px;
 		border-color: grey;
-		border-style: solid;
-		
+		border-style: solid;*/
+	
 	}
 	.index *:first-child {
 		border-width: 1px 1px 1px 1px;
 	}
 	.index a:hover {
-		color: firebrick;
-		background-color: rgba(200, 0, 0, 0.2);
+		color: white;
+		/*background-color: rgba(200, 0, 0, 0.2);*/
+
 	}
 
 .navigation {
@@ -56,7 +77,9 @@ a, a:link, a:visited {
 	}
 
 .active {
-	background-color: gainsboro;
+	/*background-color: gainsboro;*/
+	color: black;
+	background-color: white;
 }
 
 /* Article */
