@@ -71,16 +71,27 @@ header {
 	.index a.active:hover {
 		color: black;
 	}
+	.index * {
+		
+	}
 	.index * + * {
-		border-left: 1px solid grey;
+		border-left: 1px solid dimgray;
 	}
 	.index .active {
 		color: black;
 		background-color: whitesmoke;
 	}
 
+/* Main */
+main {
+	display: -webkit-box;
+	display: flex;
+}
+
 /* Article */
 article {
+	flex: 0 0 75%;
+	
 	overflow: auto;
 	padding: 1em;
 	
@@ -128,6 +139,11 @@ figcaption {
 	font-size: 0.8em;
 }
 
+.logo {
+	height: 1.3em;
+	vertical-align: middle;
+}
+
 .float_left {
 	float: left;
 	clear: both;
@@ -149,6 +165,54 @@ figcaption {
 .image_group > * ~ figure {
 	margin-left: 0.5em;
 }
+
+/* Hover */
+.nav_hover {
+	opacity: 0;
+	flex: 1 0 12%;
+}
+	.nav_hover:hover {
+		-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		transition:.5s;
+		opacity: 1;
+	}
+	.nav_hover a.hover_right {
+		display: block;
+		background-color: #2C3239;
+		border-radius: 20px 0 0 20px;
+		color: white;
+		
+		position: fixed;
+		right: 0;
+		top: 50%;
+		width: 3em;
+		
+		text-align: right;
+		padding-top: 2em;
+		padding-bottom: 2em;
+		text-decoration: none;
+		font-size: 1.2em;
+	}
+	.nav_hover a.hover_left {
+		display: block;
+		background-color: #2C3239;
+		border-radius: 0px 20px 20px 0px;
+		color: white;
+		
+		position: fixed;
+		left: 0;
+		top: 50%;
+		width: 3em;
+		
+		text-align: left;
+		padding-top: 2em;
+		padding-bottom: 2em;
+		text-decoration: none;
+		font-size: 1.2em;
+	}
 
 /* Footer */
 footer {
