@@ -5,6 +5,9 @@
 body {
 	min-width: 52em;
 	font-family: 'Lato', sans-serif;
+		
+	padding-left: 10em;
+	padding-right: 10em;
 }
 
 a, a:link, a:visited {
@@ -12,58 +15,60 @@ a, a:link, a:visited {
 	color: black;
 }
 
+/* Header */
+header {
+	background-color: white;
+	color:black;
+}
+	header a, header a:link, header a:visited {
+		color: black;
+	}
+
+/* Title */
+.title {
+	margin-bottom: 0.5em;
+}
+	.title h1{
+		display: inline;
+		padding-right: 0.3em;
+	}
+	.title img {
+		height: 100%;
+	}
+
 /* Navbar */
 .index {
+	display: -webkit-box;
 	display: flex;
 	text-align: center;
 }
 	.index * {
+		display: block;
+		-webkit-box-flex: 1;
 		flex: 1 1 5em;
 		font-size: 0.85em;
 		
 		border-width: 1px 1px 1px 0px;
-		border-color: grey;
 		border-style: solid;
-		
+		border-color: black;
 	}
 	.index *:first-child {
 		border-width: 1px 1px 1px 1px;
 	}
+	.index .active {
+		background-color: orangered;
+		color: white;
+	}
 	.index a:hover {
-		color: firebrick;
-		background-color: rgba(200, 0, 0, 0.2);
+		background-color: orangered;
+		color: white;
 	}
-
-.navigation {
-	display: flex;
-	justify-content: space-between;
-	font-size: 1.5em;
-}
-	.navigation * {
-		flex: 1 1 10em;
-	}
-	.navigation *:nth-child(2) {
-		/* Sets the next link to be right justified */
-		text-align: right;
-	}
-	.navigation a:hover {
-		color: firebrick;
-		background: linear-gradient(to right, rgba(200, 0, 0, 0.2), rgba(200, 0, 0, 0.0));
-	}
-	.navigation a:hover:nth-child(2) {
-		color: firebrick;
-		background: linear-gradient(to left, rgba(200, 0, 0, 0.2), rgba(200, 0, 0, 0.0));
-	}
-
-.active {
-	background-color: gainsboro;
-}
 
 /* Article */
 article {
 	overflow: auto;
-	padding-left: 1em;
-	padding-right: 1em;
+	padding: 1em;
+
 }
 	article h1 {
 		font-variant: small-caps;
@@ -72,6 +77,10 @@ article {
 	}
 	article > h2 {
 		text-align: center;
+	}
+	article .front_page_img {
+		width: 100%;
+		height: auto;
 	}
 
 .quote {
@@ -115,6 +124,7 @@ figcaption {
 }
 
 .image_group {
+	display: -webkit-box;
 	display: flex;
 }
 
@@ -125,4 +135,5 @@ figcaption {
 /* Footer */
 footer {
 	text-align: center;
+	padding: 1em;
 }
