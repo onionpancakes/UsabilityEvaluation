@@ -1,18 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 
 /* Global stuff */
 body {
 	min-width: 52em;
 	font-family: 'Lato', sans-serif;
-		
-	padding-left: 10em;
-	padding-right: 10em;
-}
-
-a, a:link, a:visited {
-	text-decoration: none;
-	color: black;
+	
+	width: 80%;
+	margin: auto;
 }
 
 /* Header */
@@ -21,6 +15,7 @@ header {
 	color:black;
 }
 	header a, header a:link, header a:visited {
+		text-decoration: none;
 		color: black;
 	}
 
@@ -56,11 +51,11 @@ header {
 		border-width: 1px 1px 1px 1px;
 	}
 	.index .active {
-		background-color: orangered;
+		background-color: darkslategray;
 		color: white;
 	}
 	.index a:hover {
-		background-color: orangered;
+		background-color: darkslategray;
 		color: white;
 	}
 
@@ -86,7 +81,6 @@ article {
 .quote {
 	text-align: center;
 	font-size: 1.5em;
-	font-weight: 300;
 }
 
 section {
@@ -98,6 +92,9 @@ section {
 figure {
 	width: 300px;
 	margin: 0;
+	background-color: rgba(220,220,220,0.3);
+	padding: 0.3em;
+	border-radius: 5px;
 }
 	figure img {
 		width: 100%;
@@ -135,5 +132,5 @@ figcaption {
 /* Footer */
 footer {
 	text-align: center;
-	padding: 1em;
+	padding: 0.5em;
 }
